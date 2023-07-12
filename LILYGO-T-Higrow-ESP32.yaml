@@ -3,7 +3,7 @@ substitutions:
   # Dashes are not supported in devicename
   devicename: 'higrow'
   device_description: 'Keep my plants alive and well'
-  project_version: '1.1'
+  project_version: '1.2'
   update_interval: 2sec
   loglevel: DEBUG
   moisture_min: '2.82'
