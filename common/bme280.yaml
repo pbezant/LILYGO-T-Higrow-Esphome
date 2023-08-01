@@ -4,7 +4,10 @@ sensor:
     i2c_id: bus_a
     temperature:
       name: '${devicename} BME280 Temperature'
-      oversampling: 1x
+      oversampling: 4x
+      unit_of_measurement: "°F"
+      filters:
+        - lambda: return x * (9.0/5.0) + 32.0;
       # filters: # uncomment after calibration
       #   - offset: -2.3 # offset in °C for the measured temperature
     pressure:
