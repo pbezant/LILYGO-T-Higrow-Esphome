@@ -40,7 +40,7 @@ esphome:
       - switch.turn_off: spower
 
 dashboard_import:
-  package_import_url: github://pbezant/LILYGO-T-Higrow-Esphome/LILYGO-T-Higrow-ESP32.yaml@main
+  package_import_url: github://pbezant/LILYGO-T-Higrow-Esphome/LILYGO-T-Higrow-ESP32.yaml
 
 esp32:
   board: lolin_d32
