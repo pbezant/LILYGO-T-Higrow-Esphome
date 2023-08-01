@@ -110,11 +110,7 @@ sensor:
 packages:
   text_sensors: !include common/text_sensors.yaml
   bme280: !include common/bme280.yaml
-<<<<<<< Updated upstream
-  # dht: !include common/dht.yaml
-=======
   #dht: !include common/dht.yaml
->>>>>>> Stashed changes
   plantsensors: !include common/plantsensors.yaml
   # waterpump: !include common/waterpump.yaml
   bluetooth: !include common/bluetooth.yaml
