@@ -3,7 +3,7 @@ substitutions:
   # Dashes are not supported in devicename
   devicename: 'higrow'
   device_description: 'Keep my plants alive and well'
-  project_version: '1.5'
+  project_version: '2'
   update_interval: 2sec
   loglevel: DEBUG
   moisture_min: '2.82'
@@ -39,8 +39,8 @@ esphome:
     then:
       - switch.turn_off: spower
 
-# dashboard_import:
-#   package_import_url: github://pbezant/LILYGO-T-Higrow-Esphome/LILYGO-T-Higrow-ESP32.yaml
+dashboard_import:
+  package_import_url: github://pbezant/LILYGO-T-Higrow-Esphome/LILYGO-T-Higrow-ESP32.yaml
 
 esp32:
   board: lolin_d32
@@ -117,4 +117,4 @@ packages:
   # Battery only works for 12 hours with deepsleep!
   deepsleep: !include common/deepsleep.yaml
   battery: !include common/battery.yaml
-  # mqtt: !include common/mqtt.yaml
+  #mqtt: !include common/mqtt.yaml

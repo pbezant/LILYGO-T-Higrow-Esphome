@@ -7,7 +7,7 @@ sensor:
       oversampling: 4x
       unit_of_measurement: "°F"
       filters:
-        - lambda: return x * (9.0/5.0) + 32.0;
+      # - lambda: return x * (9.0/5.0) + 32.0;
       # filters: # uncomment after calibration
       #   - offset: -2.3 # offset in °C for the measured temperature
     pressure:
