@@ -1,0 +1,5 @@
+mqtt:
+  broker: "Your MQTT Broker IP Address"
+  port: 1883
+  username: "Your MQTT Username"
+  password: "Your MQTT Password"
