@@ -109,11 +109,11 @@ sensor:
 
 packages:
   text_sensors: !include common/text_sensors.yaml
-  bme280: !include common/bme280.yaml
-  #dht: !include common/dht.yaml
+  # bme280: !include common/bme280.yaml
+  dht: !include common/dht.yaml
   plantsensors: !include common/plantsensors.yaml
   # waterpump: !include common/waterpump.yaml
-  # bluetooth: !include common/bluetooth.yaml
+  bluetooth: !include common/bluetooth.yaml
   # Battery only works for 12 hours with deepsleep!
   deepsleep: !include common/deepsleep.yaml
   battery: !include common/battery.yaml
