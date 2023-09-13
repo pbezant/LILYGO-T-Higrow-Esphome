@@ -67,7 +67,7 @@ captive_portal:
 logger:
   level: '${loglevel}'
 
-api:
+#api:
 
 ota:
   safe_mode: true
