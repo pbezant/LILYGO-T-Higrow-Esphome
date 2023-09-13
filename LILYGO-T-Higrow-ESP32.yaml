@@ -115,6 +115,6 @@ packages:
   # waterpump: !include common/waterpump.yaml
   bluetooth: !include common/bluetooth.yaml
   # Battery only works for 12 hours with deepsleep!
-#  deepsleep: !include common/deepsleep.yaml
+  deepsleep: !include common/deepsleep.yaml
   battery: !include common/battery.yaml
   #mqtt: !include common/mqtt.yaml
