@@ -120,4 +120,4 @@ packages:
   # Battery only works for 12 hours with deepsleep!
   deepsleep: !include common/deepsleep.yaml
   battery: !include common/battery.yaml
-  mqtt: !include common/mqtt.yaml
+  # mqtt: !include common/mqtt.yaml
