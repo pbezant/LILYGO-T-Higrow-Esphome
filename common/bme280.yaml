@@ -5,7 +5,7 @@ sensor:
     temperature:
       name: '${devicename} BME280 Temperature'
       oversampling: 4x
-      # unit_of_measurement: "°F"
+      unit_of_measurement: "°C"
       # filters:
       #   - lambda: return x * (9.0/5.0) + 32.0;
       # filters: # uncomment after calibration
