@@ -5,7 +5,7 @@ sensor:
     temperature:
       name: '${devicename} BME280 Temperature'
       oversampling: 4x
-      unit_of_measurement: "F"
+      unit_of_measurement: "°F"
       filters:
         - lambda: return x * (9.0/5.0) + 32.0;
       # filters: # uncomment after calibration
@@ -13,8 +13,8 @@ sensor:
     pressure:
       name: '${devicename} BME280 Pressure'
       unit_of_measurement: "inHg"
-      filters: # uncomment after calibration
-        - multiply: 2.036
+      # filters: # uncomment after calibration
+      #   - multiply: 2.036
       # filters: 
       #   - offset: -2.3 # offset in °C for the measured temperature
     humidity:
