@@ -30,7 +30,7 @@ esphome:
   # configuration and updates.
   project:
     name: esphome.project-template
-    version: '${project_version}'
+    # version: '${project_version}'
   on_boot:
     priority: 240
     then:
