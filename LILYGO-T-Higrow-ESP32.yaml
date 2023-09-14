@@ -15,6 +15,9 @@ substitutions:
   run_duration: 1min
   # set how long to sleep in minutes
   sleep_duration: 9min
+  mqtt_broker: mqtt.lan
+  mqtt_username: mqtt
+  mqtt_password: M0squitto
 
 esphome:
   name: '${devicename}'
@@ -117,4 +120,4 @@ packages:
   # Battery only works for 12 hours with deepsleep!
   deepsleep: !include common/deepsleep.yaml
   battery: !include common/battery.yaml
-  #mqtt: !include common/mqtt.yaml
+  mqtt: !include common/mqtt.yaml

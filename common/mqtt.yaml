@@ -1,5 +1,5 @@
 mqtt:
-  broker: "Your MQTT Broker IP Address"
+  broker: ${mqtt_broker}
   port: 1883
-  username: "Your MQTT Username"
-  password: "Your MQTT Password"
+  username: ${mqtt_username}
+  password: ${mqtt_password}
