@@ -4,6 +4,9 @@ esp32_ble_tracker:
     interval: 1100ms # default 320ms
     window: 1100ms # default 30ms
     active: true
+    
+esp32_improv:
+  authorizer: none
 
 # bluetooth_proxy:
 #   active: true
