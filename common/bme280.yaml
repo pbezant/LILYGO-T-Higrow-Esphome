@@ -12,7 +12,7 @@ sensor:
       #   - offset: -2.3 # offset in °C for the measured temperature
     pressure:
       name: '${devicename} BME280 Pressure'
-      unit_of_measurement: "psi"
+      # unit_of_measurement: "psi"
       # filters: # uncomment after calibration
       #   - multiply: 2.036
       # filters: 
