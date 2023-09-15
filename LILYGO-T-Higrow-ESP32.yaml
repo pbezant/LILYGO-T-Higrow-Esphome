@@ -23,7 +23,7 @@ substitutions:
 esphome:
   name: '${devicename}'
   comment: '${device_description}'
-  friendly_name: '${friendly_name}'
+  # friendly_name: '${friendly_name}'
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
   name_add_mac_suffix: true
@@ -45,7 +45,7 @@ esphome:
       - switch.turn_off: spower
 
 dashboard_import:
-  package_import_url: github://pbezant/LILYGO-T-Higrow-Esphome/LILYGO-T-Higrow-ESP32.yaml@main
+  package_import_url: github://pbezant/LILYGO-T-Higrow-Esphome/LILYGO-T-Higrow-ESP32.yaml
 
 esp32:
   board: lolin_d32
