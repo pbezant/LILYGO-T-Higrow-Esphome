@@ -4,7 +4,7 @@ substitutions:
   devicename: 'igrow'
   friendly_name: iGrow
   device_description: 'Keep my plants alive and well'
-  project_version: '1.65'
+  project_version: '1.6'
   update_interval: 2sec
   loglevel: DEBUG
   moisture_min: '2.82'
@@ -58,9 +58,9 @@ wifi:
   # password: !secret wifi_password
   # fast_connect: true
 
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: '${devicename}'
+  # # Enable fallback hotspot (captive portal) in case wifi connection fails
+  # ap:
+  #   ssid: '${devicename}'
 
 captive_portal:
 

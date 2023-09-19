@@ -5,8 +5,8 @@ esp32_ble_tracker:
     window: 1100ms # default 30ms
     active: true
 
-# esp32_improv:
-#   authorizer: none
+esp32_improv:
+  authorizer: none
 
 # bluetooth_proxy:
 #   active: true
