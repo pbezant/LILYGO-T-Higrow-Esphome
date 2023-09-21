@@ -1,5 +1,14 @@
 mqtt:
   broker: ${mqtt_broker}
   port: 1883
-  username: ${mqtt_username}
-  password: ${mqtt_password}
+  on_message:
+    - topic: ${devicename}/deepSleep
+      payload: 'OFF'
+      then:
+        - deep_sleep.prevent: deep_sleep_control
+        - logger.log: "deepSleep is OFF"
+    - topic: ${devicename}/deepSleep
+      payload: 'ON'
+      then:
+        - deep_sleep.enter: deep_sleep_control
+        - logger.log: "deepSleep is ON"
