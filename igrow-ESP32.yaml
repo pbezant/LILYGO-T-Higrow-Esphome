@@ -86,6 +86,7 @@ button:
   - platform: restart
     name: 'Restart - ${devicename}'
 
+
 i2c:
   sda: 25
   scl: 26
@@ -104,6 +105,17 @@ switch:
     restore_mode: ALWAYS_ON
     internal: true
     setup_priority: 1000
+  - platform: template
+    id: enable_sleep
+    name: "Enable Deep Sleep"
+    assumed_state: True
+    restore_state: no
+    turn_on_action:
+        - logger.log: "Allowing deep sleep"
+        - deep_sleep.allow: deep_sleep_control
+    turn_off_action:
+        - logger.log: "Preventing deep sleep"
+        - deep_sleep.prevent: deep_sleep_control
 
 sensor:
   # Wifi sensor
@@ -111,6 +123,9 @@ sensor:
     name: '${devicename} WiFi Signal'
     id: '${devicename}_wifi_signal'
     update_interval: ${update_interval}
+  - platform: homeassistant
+    id: ha_enable_deep_sleep
+    entity_id: input_boolean.!{devicename}_deep_sleep
 
 packages:
   text_sensors: !include common/text_sensors.yaml

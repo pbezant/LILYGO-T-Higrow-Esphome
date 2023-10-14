@@ -1,6 +1,7 @@
 mqtt:
   broker: ${mqtt_broker}
   port: 1883
+  state_topic: sensors/
   on_message:
     - topic: ${devicename}/deepSleep
       payload: 'OFF'
