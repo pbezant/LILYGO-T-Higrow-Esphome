@@ -125,7 +125,7 @@ sensor:
     update_interval: ${update_interval}
   - platform: homeassistant
     id: ha_enable_deep_sleep
-    entity_id: input_boolean.!{devicename}_deep_sleep
+    entity_id: input_boolean.${devicename}_deep_sleep
 
 packages:
   text_sensors: !include common/text_sensors.yaml
